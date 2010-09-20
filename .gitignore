@@ -1,6 +1,6 @@
 build
-*.xcodeproj/*.mode1v3
-*.xcodeproj/*.pbxuser
-*.xcodeproj/*.perspectivev3
+*.mode1v3
+*.pbxuser
+*.perspectivev3
 .DS_Store
 .*.swp
