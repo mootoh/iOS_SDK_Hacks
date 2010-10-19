@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14014E1E104C132600B3A530 /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 14014E1D104C132600B3A530 /* MyAnnotation.m */; };
+		14890A91104A61F1008D146D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14890A90104A61F1008D146D /* MapKit.framework */; };
+		14890AC2104A64F4008D146D /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890AB7104A64F4008D146D /* NSObject+SBJSON.m */; };
+		14890AC3104A64F4008D146D /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890AB9104A64F4008D146D /* NSString+SBJSON.m */; };
+		14890AC4104A64F4008D146D /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890ABB104A64F4008D146D /* SBJSON.m */; };
+		14890AC5104A64F4008D146D /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890ABD104A64F4008D146D /* SBJsonBase.m */; };
+		14890AC6104A64F4008D146D /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890ABF104A64F4008D146D /* SBJsonParser.m */; };
+		14890AC7104A64F4008D146D /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14890AC1104A64F4008D146D /* SBJsonWriter.m */; };
+		14890B36104A8118008D146D /* originalPin.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B31104A8118008D146D /* originalPin.png */; };
+		14890B37104A8118008D146D /* originalPinDrop1.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B32104A8118008D146D /* originalPinDrop1.png */; };
+		14890B38104A8118008D146D /* originalPinDrop2.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B33104A8118008D146D /* originalPinDrop2.png */; };
+		14890B39104A8118008D146D /* originalPinDrop3.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B34104A8118008D146D /* originalPinDrop3.png */; };
+		14890B3A104A8118008D146D /* originalPinShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B35104A8118008D146D /* originalPinShadow.png */; };
+		14890B3D104A8162008D146D /* originalPinFloating.png in Resources */ = {isa = PBXBuildFile; fileRef = 14890B3C104A8162008D146D /* originalPinFloating.png */; };
+		1D3623260D0F684500981E51 /* MapHacksAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* MapHacksAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* MapHacksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MapHacksViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* MapHacksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MapHacksViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14014E1C104C132600B3A530 /* MyAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnnotation.h; sourceTree = "<group>"; };
+		14014E1D104C132600B3A530 /* MyAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnnotation.m; sourceTree = "<group>"; };
+		14890A90104A61F1008D146D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		14890AB5104A64F4008D146D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		14890AB6104A64F4008D146D /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		14890AB7104A64F4008D146D /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		14890AB8104A64F4008D146D /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		14890AB9104A64F4008D146D /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		14890ABA104A64F4008D146D /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		14890ABB104A64F4008D146D /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		14890ABC104A64F4008D146D /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		14890ABD104A64F4008D146D /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		14890ABE104A64F4008D146D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		14890ABF104A64F4008D146D /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		14890AC0104A64F4008D146D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		14890AC1104A64F4008D146D /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		14890B31104A8118008D146D /* originalPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPin.png; path = Resources/originalPin.png; sourceTree = "<group>"; };
+		14890B32104A8118008D146D /* originalPinDrop1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPinDrop1.png; path = Resources/originalPinDrop1.png; sourceTree = "<group>"; };
+		14890B33104A8118008D146D /* originalPinDrop2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPinDrop2.png; path = Resources/originalPinDrop2.png; sourceTree = "<group>"; };
+		14890B34104A8118008D146D /* originalPinDrop3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPinDrop3.png; path = Resources/originalPinDrop3.png; sourceTree = "<group>"; };
+		14890B35104A8118008D146D /* originalPinShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPinShadow.png; path = Resources/originalPinShadow.png; sourceTree = "<group>"; };
+		14890B3C104A8162008D146D /* originalPinFloating.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = originalPinFloating.png; path = Resources/originalPinFloating.png; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* MapHacksAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHacksAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* MapHacksAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapHacksAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* MapHacks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapHacks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* MapHacksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapHacksViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* MapHacksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHacksViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* MapHacksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapHacksViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* MapHacks_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHacks_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* MapHacks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MapHacks-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				14890A91104A61F1008D146D /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14890AB4104A64F4008D146D /* JSON */,
+				1D3623240D0F684500981E51 /* MapHacksAppDelegate.h */,
+				1D3623250D0F684500981E51 /* MapHacksAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* MapHacksViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* MapHacksViewController.m */,
+				14014E1C104C132600B3A530 /* MyAnnotation.h */,
+				14014E1D104C132600B3A530 /* MyAnnotation.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14890AB4104A64F4008D146D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				14890AB5104A64F4008D146D /* JSON.h */,
+				14890AB6104A64F4008D146D /* NSObject+SBJSON.h */,
+				14890AB7104A64F4008D146D /* NSObject+SBJSON.m */,
+				14890AB8104A64F4008D146D /* NSString+SBJSON.h */,
+				14890AB9104A64F4008D146D /* NSString+SBJSON.m */,
+				14890ABA104A64F4008D146D /* SBJSON.h */,
+				14890ABB104A64F4008D146D /* SBJSON.m */,
+				14890ABC104A64F4008D146D /* SBJsonBase.h */,
+				14890ABD104A64F4008D146D /* SBJsonBase.m */,
+				14890ABE104A64F4008D146D /* SBJsonParser.h */,
+				14890ABF104A64F4008D146D /* SBJsonParser.m */,
+				14890AC0104A64F4008D146D /* SBJsonWriter.h */,
+				14890AC1104A64F4008D146D /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MapHacks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* MapHacks_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				14890B3C104A8162008D146D /* originalPinFloating.png */,
+				14890B31104A8118008D146D /* originalPin.png */,
+				14890B32104A8118008D146D /* originalPinDrop1.png */,
+				14890B33104A8118008D146D /* originalPinDrop2.png */,
+				14890B34104A8118008D146D /* originalPinDrop3.png */,
+				14890B35104A8118008D146D /* originalPinShadow.png */,
+				2899E5210DE3E06400AC0155 /* MapHacksViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* MapHacks-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				14890A90104A61F1008D146D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MapHacks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MapHacks" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapHacks;
+			productName = MapHacks;
+			productReference = 1D6058910D05DD3D006BFB54 /* MapHacks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MapHacks" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MapHacks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* MapHacksViewController.xib in Resources */,
+				14890B36104A8118008D146D /* originalPin.png in Resources */,
+				14890B37104A8118008D146D /* originalPinDrop1.png in Resources */,
+				14890B38104A8118008D146D /* originalPinDrop2.png in Resources */,
+				14890B39104A8118008D146D /* originalPinDrop3.png in Resources */,
+				14890B3A104A8118008D146D /* originalPinShadow.png in Resources */,
+				14890B3D104A8162008D146D /* originalPinFloating.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* MapHacksAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* MapHacksViewController.m in Sources */,
+				14890AC2104A64F4008D146D /* NSObject+SBJSON.m in Sources */,
+				14890AC3104A64F4008D146D /* NSString+SBJSON.m in Sources */,
+				14890AC4104A64F4008D146D /* SBJSON.m in Sources */,
+				14890AC5104A64F4008D146D /* SBJsonBase.m in Sources */,
+				14890AC6104A64F4008D146D /* SBJsonParser.m in Sources */,
+				14890AC7104A64F4008D146D /* SBJsonWriter.m in Sources */,
+				14014E1E104C132600B3A530 /* MyAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MapHacks_Prefix.pch;
+				INFOPLIST_FILE = "MapHacks-Info.plist";
+				PRODUCT_NAME = MapHacks;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MapHacks_Prefix.pch;
+				INFOPLIST_FILE = "MapHacks-Info.plist";
+				PRODUCT_NAME = MapHacks;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MapHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MapHacks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

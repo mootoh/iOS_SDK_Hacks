@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'dumpSubview' target in the 'dumpSubview' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
