@@ -26,7 +26,7 @@ BOOL drawDebugFrame = NO;
 
 - (id)initWithFrame:(CGRect)frame withCell:(MyTableViewCell*)newcell {
     if (self = [super initWithFrame:frame]) {
-		cell = [newcell retain];
+		cell = newcell;
 		[self setBackgroundColor:[UIColor clearColor]];
     }
     return self;
@@ -72,7 +72,6 @@ BOOL drawDebugFrame = NO;
 }
 
 - (void)dealloc {
-	[cell release];
     [super dealloc];
 }
 
