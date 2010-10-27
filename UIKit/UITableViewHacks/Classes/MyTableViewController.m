@@ -29,7 +29,7 @@
     if (self = [super initWithStyle:style]) {
 		contents = [[NSMutableArray array] retain];
 		for (int i = 0; i < 100; i++) {
-			Content *content = [[Content alloc] initWithNumber:i];
+			Content *content = [[[Content alloc] initWithNumber:i] autorelease];
 			[contents addObject:content];
 		}
 		
@@ -86,6 +86,7 @@
 }
 
 - (void)dealloc {
+	[contents release];
     [super dealloc];
 }
 
