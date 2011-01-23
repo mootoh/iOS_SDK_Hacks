@@ -18,6 +18,9 @@
 		14A5780D11DB150F009D39BD /* CCCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5780A11DB150F009D39BD /* CCCameraController.m */; };
 		14A5780E11DB150F009D39BD /* CCCameraTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A5780C11DB150F009D39BD /* CCCameraTexture.m */; };
 		14CAC8A112660526000E2A43 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CAC8A012660526000E2A43 /* CameraViewController.m */; };
+		14E79B4B12EC438700D39E8A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 14E79B4812EC438700D39E8A /* Default.png */; };
+		14E79B4C12EC438700D39E8A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E79B4912EC438700D39E8A /* MainWindow.xib */; };
+		14E79B4D12EC438700D39E8A /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14E79B4A12EC438700D39E8A /* RootViewController.xib */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -45,6 +48,9 @@
 		14A5780C11DB150F009D39BD /* CCCameraTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CCCameraTexture.m; path = Camera/CCCameraTexture.m; sourceTree = "<group>"; };
 		14CAC89F12660526000E2A43 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = Camera/CameraViewController.h; sourceTree = "<group>"; };
 		14CAC8A012660526000E2A43 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = Camera/CameraViewController.m; sourceTree = "<group>"; };
+		14E79B4812EC438700D39E8A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		14E79B4912EC438700D39E8A /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		14E79B4A12EC438700D39E8A /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RootViewController.xib; path = Resources/RootViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D6058910D05DD3D006BFB54 /* CameraPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -136,6 +142,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				14E79B4812EC438700D39E8A /* Default.png */,
+				14E79B4912EC438700D39E8A /* MainWindow.xib */,
+				14E79B4A12EC438700D39E8A /* RootViewController.xib */,
 				8D1107310486CEB800E47090 /* CameraPixel-Info.plist */,
 			);
 			name = Resources;
@@ -205,6 +214,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E79B4B12EC438700D39E8A /* Default.png in Resources */,
+				14E79B4C12EC438700D39E8A /* MainWindow.xib in Resources */,
+				14E79B4D12EC438700D39E8A /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +280,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
