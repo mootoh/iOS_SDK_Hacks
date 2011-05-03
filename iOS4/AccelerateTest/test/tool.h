@@ -1,5 +1,5 @@
 /*
- *  dotproduct.h
+ *  tool.h
  *  AccelerateTest
  *
  *  Created by sonson on 10/08/15.
@@ -13,9 +13,9 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-	void test_dotproduct();
-	double test_dotproduct_on_cpu(int vectorsize, int testCount);
-	double test_dotproduct_on_accelerate(int vectorsize, int testCount);
+	void _tic();
+	double _toc();
+	double _tocp();
 #ifdef __cplusplus
 }
 #endif

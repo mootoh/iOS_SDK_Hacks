@@ -14,6 +14,9 @@
 #import "lapack_linearEquation.h"
 #import "vdsp_abs.h"
 
+#import "TestController.h"
+#import "ResultViewController.h"
+
 @implementation RootViewController
 
 #pragma mark -
@@ -28,6 +31,8 @@
 	[titles addObject:@"vdsp_int2float"];
 	[titles addObject:@"lapack_linearEquation"];
 	[titles addObject:@"test_abs"];
+	
+	[self setTitle:NSLocalizedString(@"Select test", nil)];
 }
 
 #pragma mark -
@@ -67,6 +72,17 @@
 	
 	if (indexPath.row == 0) {
 		test_dotproduct();
+		
+		
+		ResultViewController *con = [[ResultViewController alloc] initWithNibName:nil bundle:nil];
+		id obj = [[TestController alloc] init];
+		
+		
+		[self.navigationController pushViewController:con animated:YES];
+		
+		[con.textView setText:[obj testDotProduct]];
+		[con setTitle:[titles objectAtIndex:indexPath.row]];
+		[obj release];
 	}
 	else if (indexPath.row == 1) {
 		test_matrix_mult_vec();
