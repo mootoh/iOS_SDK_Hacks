@@ -12,4 +12,5 @@
 @interface TestController : NSObject {
 }
 - (NSString*)testDotProduct;
+- (NSString*)testLinearEquation;
 @end

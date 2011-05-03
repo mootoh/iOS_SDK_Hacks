@@ -9,6 +9,8 @@
 
 #include "lapack_linearEquation.h"
 
+#include "tool.h"
+
 // make matrix and vector
 
 void matrixfill_random(float *matrix, int row_size, int column_size) {
@@ -29,7 +31,7 @@ void vectorfill_random(float *vector, int row_size) {
 
 // calculate with gauss elimination
 
-double gauss (float *matrix, float *vec, float *vec_x, int size) {
+void gauss (float *matrix, float *vec, float *vec_x, int size) {
 	int i,j,k,c;
 	
 	float **array = (float**)malloc(sizeof(float*) * size);
@@ -49,9 +51,6 @@ double gauss (float *matrix, float *vec, float *vec_x, int size) {
 	for (int i = 0; i < size; i++) {
 		array[i][size] = vec[i];
 	}
-	
-	CFAbsoluteTime startTime;
-	startTime = CFAbsoluteTimeGetCurrent();
 	
 	/* check :pivot */
 	for(k=0;k<size;k++){
@@ -97,8 +96,6 @@ double gauss (float *matrix, float *vec, float *vec_x, int size) {
 		}
 	}
 	
-	CFAbsoluteTime interval = (CFAbsoluteTimeGetCurrent() - startTime)*1000.0f;
-	
 	for (int i = 0; i < size; i++) {
 		vec_x[i] = array[i][size];
 	}
@@ -108,11 +105,9 @@ double gauss (float *matrix, float *vec, float *vec_x, int size) {
 	}
 	
 	free(array);
-	
-	return interval;
 }
 
-double lapack(float *matrix, float *vec, int size) {
+void lapack(float *matrix, float *vec, int size) {
 	
 	__CLPK_integer n = size;
 	__CLPK_integer nrhs = 1;
@@ -121,17 +116,74 @@ double lapack(float *matrix, float *vec, int size) {
 	__CLPK_integer *ipiv;
 	ipiv = (__CLPK_integer*)malloc(sizeof(__CLPK_integer) * size);
 	
-	CFAbsoluteTime startTime;
-	startTime = CFAbsoluteTimeGetCurrent();
 	sgesv_(&n, &nrhs, matrix, &ldb, ipiv, vec, &ldb, &info);
 	
-	CFAbsoluteTime interval = (CFAbsoluteTimeGetCurrent() - startTime)*1000.0f;
-	
 	free(ipiv);
-	
-	return interval;
 }
 
+double test_linearEquation_on_acclerate(int size, int test_count) {
+	
+	float *matrix;
+	float *vec_b;
+	float *vec_x;
+	float *vec;
+	
+	// alloc memory
+	matrix = (float*)malloc(sizeof(float) * size * size);
+	vec_b = (float*)malloc(sizeof(float) * size);
+	vec_x = (float*)malloc(sizeof(float) * size);
+	vec = (float*)malloc(sizeof(float) * size);
+	
+	_tic();
+	for (int c = 0; c < test_count; c++) {
+		// make matrix and vector
+		matrixfill_random(matrix, size, size);
+		vectorfill_random(vec_b, size);
+		lapack(matrix, vec_b, size);
+	}	
+	double t = _toc();
+	
+	// release memory
+	free(vec);
+	free(matrix);
+	free(vec_b);
+	free(vec_x);
+	
+	return t / (double)test_count;
+}
+
+double test_linearEquation_on_cpu(int size, int test_count) {
+	
+	float *matrix;
+	float *vec_b;
+	float *vec_x;
+	float *vec;
+	
+	// alloc memory
+	matrix = (float*)malloc(sizeof(float) * size * size);
+	vec_b = (float*)malloc(sizeof(float) * size);
+	vec_x = (float*)malloc(sizeof(float) * size);
+	vec = (float*)malloc(sizeof(float) * size);
+	
+	_tic();
+	for (int c = 0; c < test_count; c++) {
+		// make matrix and vector
+		matrixfill_random(matrix, size, size);
+		vectorfill_random(vec_b, size);
+		gauss(matrix, vec_b, vec_x, size);
+	}	
+	double t = _toc();
+	
+	// release memory
+	free(vec);
+	free(matrix);
+	free(vec_b);
+	free(vec_x);
+	
+	return t / (double)test_count;
+}
+
+/*
 void test_linearEquation() {
 	printf("--------------------------------------------------------------------------------\n");
 	printf("linear equation\n");
@@ -190,3 +242,4 @@ void test_linearEquation() {
 		free(vec_x);
 	}
 }
+*/

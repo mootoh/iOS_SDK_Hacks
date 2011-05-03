@@ -68,14 +68,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
+	ResultViewController *con = [[ResultViewController alloc] initWithNibName:nil bundle:nil];
+	[con setTitle:[titles objectAtIndex:indexPath.row]];
+	[self.navigationController pushViewController:con animated:YES];
+	
+	id obj = [[TestController alloc] init];
 	if (indexPath.row == 0) {
-		ResultViewController *con = [[ResultViewController alloc] initWithNibName:nil bundle:nil];
-		[self.navigationController pushViewController:con animated:YES];
-
-		id obj = [[TestController alloc] init];		
 		[con.textView setText:[obj testDotProduct]];
-		[con setTitle:[titles objectAtIndex:indexPath.row]];
-		[obj release];
 	}
 	else if (indexPath.row == 1) {
 		test_matrix_mult_vec();
@@ -84,11 +83,12 @@
 		test_convert_int2float();
 	}
 	else if (indexPath.row == 3) {
-		test_linearEquation();
+		[con.textView setText:[obj testLinearEquation]];
 	}
 	else if (indexPath.row == 4) {
 		test_abs();
 	}
+	[obj release];
 }
 
 - (void)dealloc {

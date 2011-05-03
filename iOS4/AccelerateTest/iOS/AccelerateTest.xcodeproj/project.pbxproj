@@ -32,18 +32,18 @@
 		143395C6121FA1C300DF25B7 /* vdsp_abs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdsp_abs.h; sourceTree = "<group>"; };
 		143746721218476C00497FBA /* blas_matrix_mult_vec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blas_matrix_mult_vec.c; sourceTree = "<group>"; };
 		143746731218476C00497FBA /* blas_matrix_mult_vec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blas_matrix_mult_vec.h; sourceTree = "<group>"; };
-		143746741218476C00497FBA /* vdsp_dotproduct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vdsp_dotproduct.c; sourceTree = "<group>"; };
-		143746751218476C00497FBA /* vdsp_dotproduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdsp_dotproduct.h; sourceTree = "<group>"; };
+		143746741218476C00497FBA /* vdsp_dotproduct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vdsp_dotproduct.c; path = ../test/vdsp_dotproduct.c; sourceTree = "<group>"; };
+		143746751218476C00497FBA /* vdsp_dotproduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vdsp_dotproduct.h; path = ../test/vdsp_dotproduct.h; sourceTree = "<group>"; };
 		143746781218479200497FBA /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		14A2ACB8136FC33500B7971C /* tool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tool.c; sourceTree = "<group>"; };
-		14A2ACB9136FC33500B7971C /* tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tool.h; sourceTree = "<group>"; };
+		14A2ACB8136FC33500B7971C /* tool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tool.c; path = ../test/tool.c; sourceTree = "<group>"; };
+		14A2ACB9136FC33500B7971C /* tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tool.h; path = ../test/tool.h; sourceTree = "<group>"; };
 		14A2ACBB136FC4D600B7971C /* TestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestController.h; sourceTree = "<group>"; };
 		14A2ACBC136FC4D600B7971C /* TestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestController.m; sourceTree = "<group>"; };
 		14A2ACBE136FCA7400B7971C /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
 		14A2ACBF136FCA7400B7971C /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
 		14A2ACC0136FCA7400B7971C /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
-		14BE78B0121A484A00F5E09F /* lapack_linearEquation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lapack_linearEquation.c; sourceTree = "<group>"; };
-		14BE78B1121A484A00F5E09F /* lapack_linearEquation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lapack_linearEquation.h; sourceTree = "<group>"; };
+		14BE78B0121A484A00F5E09F /* lapack_linearEquation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lapack_linearEquation.c; path = ../test/lapack_linearEquation.c; sourceTree = "<group>"; };
+		14BE78B1121A484A00F5E09F /* lapack_linearEquation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lapack_linearEquation.h; path = ../test/lapack_linearEquation.h; sourceTree = "<group>"; };
 		14BE78B2121A484A00F5E09F /* vdsp_int2float.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vdsp_int2float.c; sourceTree = "<group>"; };
 		14BE78B3121A484A00F5E09F /* vdsp_int2float.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vdsp_int2float.h; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,25 +92,32 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		143746711218476C00497FBA /* test */ = {
+		143746711218476C00497FBA /* old */ = {
 			isa = PBXGroup;
 			children = (
-				14A2ACB9136FC33500B7971C /* tool.h */,
-				14A2ACB8136FC33500B7971C /* tool.c */,
 				143395C6121FA1C300DF25B7 /* vdsp_abs.h */,
 				143395C5121FA1C300DF25B7 /* vdsp_abs.c */,
-				14BE78B1121A484A00F5E09F /* lapack_linearEquation.h */,
-				14BE78B0121A484A00F5E09F /* lapack_linearEquation.c */,
 				14BE78B3121A484A00F5E09F /* vdsp_int2float.h */,
 				14BE78B2121A484A00F5E09F /* vdsp_int2float.c */,
 				143746731218476C00497FBA /* blas_matrix_mult_vec.h */,
 				143746721218476C00497FBA /* blas_matrix_mult_vec.c */,
-				143746751218476C00497FBA /* vdsp_dotproduct.h */,
-				143746741218476C00497FBA /* vdsp_dotproduct.c */,
 			);
-			name = test;
+			name = old;
 			path = ../test;
 			sourceTree = SOURCE_ROOT;
+		};
+		14A2ACD2136FCE2700B7971C /* test */ = {
+			isa = PBXGroup;
+			children = (
+				14A2ACB9136FC33500B7971C /* tool.h */,
+				14A2ACB8136FC33500B7971C /* tool.c */,
+				143746751218476C00497FBA /* vdsp_dotproduct.h */,
+				143746741218476C00497FBA /* vdsp_dotproduct.c */,
+				14BE78B1121A484A00F5E09F /* lapack_linearEquation.h */,
+				14BE78B0121A484A00F5E09F /* lapack_linearEquation.c */,
+			);
+			name = test;
+			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
@@ -123,7 +130,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				143746711218476C00497FBA /* test */,
+				14A2ACD2136FCE2700B7971C /* test */,
+				143746711218476C00497FBA /* old */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,

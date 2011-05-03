@@ -13,7 +13,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-	void test_linearEquation();
+	double test_linearEquation_on_acclerate(int size, int test_count);	
+	double test_linearEquation_on_cpu(int size, int test_count);
 #ifdef __cplusplus
 }
 #endif
