@@ -68,18 +68,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	
-	NSLog(@"%d", indexPath.row);
-	
 	if (indexPath.row == 0) {
-		test_dotproduct();
-		
-		
 		ResultViewController *con = [[ResultViewController alloc] initWithNibName:nil bundle:nil];
-		id obj = [[TestController alloc] init];
-		
-		
 		[self.navigationController pushViewController:con animated:YES];
-		
+
+		id obj = [[TestController alloc] init];		
 		[con.textView setText:[obj testDotProduct]];
 		[con setTitle:[titles objectAtIndex:indexPath.row]];
 		[obj release];

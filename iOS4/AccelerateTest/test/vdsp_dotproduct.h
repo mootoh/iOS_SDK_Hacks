@@ -13,7 +13,6 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-	void test_dotproduct();
 	double test_dotproduct_on_cpu(int vectorsize, int testCount);
 	double test_dotproduct_on_accelerate(int vectorsize, int testCount);
 #ifdef __cplusplus
